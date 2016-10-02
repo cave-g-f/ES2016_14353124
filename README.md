@@ -37,7 +37,39 @@ $	mkdir objdir
 进入该文件夹objdir  
 $	cd objdir  
 运行configure(能根据系统的环境设置一下参数，用于编译)  
-$	../configure CXX=g++ --disable-async-updates  
+$	../configure CXX=g++ --disable-async-updates    
+$ sudo make install  
+记录当前的工作路径   
+$	pwd  
+
+运行后效果图：  
+![](http://i1.piimg.com/4851/4ecaac35f6ce1151.png)         
+
+**编译DOL**  
+进入刚刚dol的文件夹  
+$	cd ../dol  
+修改build_zip.xml文件  
+找到下面这段话，就是说上面编译的systemc位置在哪里  
+`<property name="systemc.inc" value="YYY/include"/>`  
+`<property name="systemc.lib" value="YYY/lib-linux/libsystemc.a"/>`  
+把YYY改成上页pwd的结果  
+$	ant -f build_zip.xml all  
+若成功会显示build successful  
+
+运行后效果图：
+![ima](http://i1.piimg.com/4851/dcd99802d943681a.png)  
+
+
+
+
+     
+      
+      
+      
+      
+
+
+
 
 
 
