@@ -56,8 +56,22 @@ $	cd ../dol
 $	ant -f build_zip.xml all  
 若成功会显示build successful  
 
-运行后效果图：
+运行后效果图：  
 ![ima](http://i1.piimg.com/4851/dcd99802d943681a.png)  
+
+**运行第一个例子**   
+$ cd build/bin/main   
+然后运行第一个例子   
+$ ant -f runexample.xml -Dnumber=1   
+运行后效果图：  
+![im](http://i1.piimg.com/4851/dcd99802d943681a.png)  
+
+##3.实验感想##
+本次实验主要是配置了dol的环境，配置过程中并没有遇到什么太大的苦难。这次接触了一种全新的文本编辑方式，markdown语言，初次使用这种
+方式来编写文档感觉还是很方便的，里面各种格式可以很方便的帮助我们排版。
+
+
+
 
 
 
